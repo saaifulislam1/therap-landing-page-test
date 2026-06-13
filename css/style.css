@@ -163,7 +163,7 @@ img {
   margin: 26px auto 0;
   color: #222222;
   font-size: 24px;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
   line-height: 1.55;
 }
 
@@ -177,8 +177,11 @@ img {
     #edf8d9 52%,
     rgba(255, 255, 255, 0) 100%
   );
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 500;
+}
+.soft-strip span {
+  font-weight: 600;
 }
 
 .primary-button {
@@ -192,7 +195,7 @@ img {
   border-radius: 999px;
   background: var(--orange);
   color: var(--blue);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.1;
   cursor: pointer;
