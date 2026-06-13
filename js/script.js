@@ -54,13 +54,11 @@ if (track && previousButton && nextButton && slideCount) {
 
   for (let i = 0; i < clonesCount; i++) {
     const clone = originalCards[i].cloneNode(true);
-    clone.classList.add("is-clone");
     track.appendChild(clone);
   }
 
   for (let i = originalCount - 1; i >= originalCount - clonesCount; i--) {
     const clone = originalCards[i].cloneNode(true);
-    clone.classList.add("is-clone");
     track.insertBefore(clone, track.firstChild);
   }
 
