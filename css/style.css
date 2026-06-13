@@ -212,7 +212,7 @@ main {
   bottom: 0;
   height: 120px;
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0 Q720,100 1440,0 L1440,120 L0,120 Z' fill='%23e6f1d2'/%3E%3Cpath d='M0,0 Q720,100 1440,0' fill='none' stroke='white' stroke-width='6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,6 C170,10 360,30 540,42 C620,47 675,50 720,50 C765,50 820,47 900,42 C1080,30 1270,10 1440,6 L1440,120 L0,120 Z' fill='%23e6f1d2'/%3E%3Cpath d='M0,6 C170,10 360,30 540,42 C620,47 675,50 720,50 C765,50 820,47 900,42 C1080,30 1270,10 1440,6' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -244,7 +244,7 @@ main {
   position: relative;
   z-index: 2;
   width: min(980px, 92vw);
-  margin: -4px auto 4px;
+  margin: 0 auto 0;
 }
 
 .section-inner {
