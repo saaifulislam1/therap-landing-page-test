@@ -51,6 +51,9 @@ img {
   display: block;
   max-width: 100%;
 }
+main {
+  padding-bottom: 70px;
+}
 
 .site-header {
   display: flex;
@@ -630,7 +633,6 @@ body.modal-open {
     border-radius: 0 16px 16px 0;
     gap: 28px;
   }
-
 }
 
 @media (max-width: 640px) {
