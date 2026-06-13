@@ -139,14 +139,16 @@ main {
 }
 
 .soft-strip {
-  max-width: 880px;
+  width: min(1040px, calc(100% - 40px));
   margin: 24px auto 28px;
-  padding: 10px 24px;
-  background: radial-gradient(
-    circle at center,
-    #e6f5c8 0%,
-    #edf8d9 52%,
-    rgba(255, 255, 255, 0) 100%
+  padding: 20px 24px;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 245, 200, 0) 0%,
+    rgba(237, 248, 217, 0.72) 10%,
+    #e6f5c8 50%,
+    rgba(237, 248, 217, 0.72) 90%,
+    rgba(230, 245, 200, 0) 100%
   );
   font-size: 24px;
   font-weight: 500;
