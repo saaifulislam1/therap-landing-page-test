@@ -2,7 +2,22 @@ const modal = document.querySelector("#contactModal");
 const modalOpeners = document.querySelectorAll("[data-modal-open]");
 const modalClosers = document.querySelectorAll("[data-modal-close]");
 const contactForm = document.querySelector(".contact-form");
+const siteHeader = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileNav = document.querySelector("#mobileNav");
 let lastFocusedElement = null;
+
+function setMenuState(isOpen) {
+  if (!siteHeader || !menuToggle || !mobileNav) return;
+
+  siteHeader.classList.toggle("is-open", isOpen);
+  document.body.classList.toggle("menu-open", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
+}
 
 function openModal() {
   lastFocusedElement = document.activeElement;
@@ -31,6 +46,10 @@ modalClosers.forEach((button) => {
 });
 
 document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && siteHeader?.classList.contains("is-open")) {
+    setMenuState(false);
+  }
+
   if (event.key === "Escape" && modal.classList.contains("is-open")) {
     closeModal();
   }
@@ -41,6 +60,26 @@ contactForm.addEventListener("submit", (event) => {
   contactForm.reset();
   closeModal();
 });
+
+if (menuToggle && mobileNav && siteHeader) {
+  menuToggle.addEventListener("click", () => {
+    setMenuState(!siteHeader.classList.contains("is-open"));
+  });
+
+  mobileNav.querySelectorAll("a, button").forEach((item) => {
+    item.addEventListener("click", () => {
+      if (window.innerWidth <= 640) {
+        setMenuState(false);
+      }
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 640) {
+      setMenuState(false);
+    }
+  });
+}
 
 const track = document.querySelector("#cardTrack");
 const previousButton = document.querySelector("#prevSlide");

@@ -18,24 +18,40 @@
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
-      <nav class="nav nav-left">
-        <a href="#menu" class="nav-link"
-          >Menu <i class="fa-solid fa-angles-down"></i
-        ></a>
-        <button type="button" class="nav-link nav-button" data-modal-open>
-          Contact Us
-        </button>
-        <a href="#support" class="nav-link">Help &amp; Support</a>
-      </nav>
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+        aria-label="Open navigation menu"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
 
-      <nav class="nav nav-right">
-        <a href="#hiring" class="nav-link"
-          >Hiring <i class="fa-solid fa-angles-down"></i
-        ></a>
-        <a href="#login" class="login-button"
-          >Login <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </nav>
+      <div class="nav-shell" id="mobileNav">
+        <nav class="nav nav-left">
+          <a href="#menu" class="nav-link"
+            >Menu <i class="fa-solid fa-angles-down"></i
+          ></a>
+          <button
+            type="button"
+            class="nav-link nav-button"
+            data-modal-open
+          >
+            Contact Us
+          </button>
+          <a href="#support" class="nav-link">Help &amp; Support</a>
+        </nav>
+
+        <nav class="nav nav-right">
+          <a href="#hiring" class="nav-link"
+            >Hiring <i class="fa-solid fa-angles-down"></i
+          ></a>
+          <a href="#login" class="login-button"
+            >Login <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -97,7 +113,8 @@
                 ipsum suspendisse ultrices
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -109,7 +126,8 @@
                 ipsum suspendisse ultrices
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -121,7 +139,8 @@
                 ipsum suspendisse gravida.
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -133,7 +152,8 @@
                 ipsum suspendisse ultrices
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -144,7 +164,8 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -155,7 +176,8 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -166,7 +188,8 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -177,7 +200,8 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
 
@@ -188,7 +212,8 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <a href="#explore"
-                >Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                >Explore
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
               ></a>
             </article>
           </div>
@@ -199,11 +224,7 @@
             <i class="fa-solid fa-angle-left"></i>
           </button>
           <strong id="slideCount">1/9</strong>
-          <button
-            type="button"
-            id="nextSlide"
-            aria-label="Next slide"
-          >
+          <button type="button" id="nextSlide" aria-label="Next slide">
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
