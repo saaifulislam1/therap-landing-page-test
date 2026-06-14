@@ -847,7 +847,7 @@ body.modal-open {
   }
 
   .hero-visual img {
-    margin-bottom: 2px;
+    margin: 0 auto -15px;
   }
 
   .feature-box {
