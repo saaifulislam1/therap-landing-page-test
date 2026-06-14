@@ -207,12 +207,12 @@ main {
   content: "";
   position: absolute;
   z-index: 3;
-  left: 0;
-  right: 0;
+  left: -2px;
+  right: -2px;
   bottom: 0;
   height: 120px;
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,6 C170,10 360,30 540,42 C620,47 675,50 720,50 C765,50 820,47 900,42 C1080,30 1270,10 1440,6 L1440,120 L0,120 Z' fill='%23e6f1d2'/%3E%3Cpath d='M0,6 C170,10 360,30 540,42 C620,47 675,50 720,50 C765,50 820,47 900,42 C1080,30 1270,10 1440,6' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,6 A920,182 0 0 0 1440,6 L1440,120 L0,120 Z' fill='%23e6f1d2'/%3E%3Cpath d='M0,6 A920,182 0 0 0 1440,6' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -244,7 +244,7 @@ main {
   position: relative;
   z-index: 2;
   width: min(980px, 92vw);
-  margin: 0 auto 0;
+  margin: 0 auto -12px;
 }
 
 .section-inner {
