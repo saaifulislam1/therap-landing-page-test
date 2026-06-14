@@ -394,12 +394,20 @@ main {
   font-weight: 800;
   display: inline-flex;
   align-items: center;
+  gap: 6px;
 }
-.info-card:hover a::after {
-  content: "\2192";
-  margin-left: 6px;
+.info-card a i {
+  opacity: 0;
+  transform: translateX(-4px);
   font-size: 14px;
-  font-weight: bold;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.info-card:hover a i {
+  opacity: 1;
+  transform: translateX(0);
 }
 .slider-controls {
   display: flex;
