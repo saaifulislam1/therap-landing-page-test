@@ -261,7 +261,7 @@ main {
   position: relative;
   z-index: 2;
   width: min(980px, 92vw);
-  margin: 0 auto -12px;
+  margin: 0 auto -22px;
 }
 
 .section-inner {
