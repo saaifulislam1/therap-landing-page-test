@@ -395,8 +395,7 @@ main {
   display: inline-flex;
   align-items: center;
 }
-.info-card:hover a::after,
-.info-card.is-active a::after {
+.info-card:hover a::after {
   content: "\2192";
   margin-left: 6px;
   font-size: 14px;
@@ -625,6 +624,57 @@ body.modal-open {
     width: calc(100% - 30px);
     padding: 40px 24px 40px 32px;
     border-radius: 0 20px 20px 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .carousel {
+    margin: 30px auto 36px;
+    padding: 28px 0;
+  }
+
+  .card-track {
+    gap: 14px;
+    padding: 0 18px;
+  }
+
+  .info-card {
+    flex: 0 0 calc((100vw - 92px) / 2.7);
+    width: calc((100vw - 92px) / 2.7);
+    height: 420px;
+    padding: 22px 18px;
+  }
+
+  .info-card h3 {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  .info-card p {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .info-card a {
+    font-size: 14px;
+  }
+
+  .info-card:nth-child(odd) {
+    transform: translateY(14px);
+  }
+
+  .info-card:nth-child(even) {
+    transform: translateY(-14px);
+  }
+
+  .info-card:nth-child(odd):hover,
+  .info-card:nth-child(odd).is-active {
+    transform: translateY(14px) scale(1.02);
+  }
+
+  .info-card:nth-child(even):hover,
+  .info-card:nth-child(even).is-active {
+    transform: translateY(-14px) scale(1.02);
   }
 }
 
