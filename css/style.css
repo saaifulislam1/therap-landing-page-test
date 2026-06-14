@@ -615,14 +615,14 @@ body.modal-open {
 @media (max-width: 900px) {
   .site-header {
     align-items: flex-start;
-    gap: 18px;
+    gap: 16px;
     padding-right: 24px;
     padding-left: 24px;
   }
 
   .nav {
     flex-wrap: wrap;
-    gap: 10px 20px;
+    gap: 10px 18px;
   }
 
   .nav-left {
@@ -636,7 +636,7 @@ body.modal-open {
 
   .promo {
     margin: 0 20px;
-    padding: 34px 26px;
+    padding: 32px 24px;
   }
 
   .hero h1 {
@@ -653,15 +653,33 @@ body.modal-open {
   .promo {
     grid-template-columns: 1fr;
     width: calc(100% - 30px);
-    padding: 40px 24px 40px 32px;
+    padding: 36px 24px 36px 28px;
     border-radius: 0 20px 20px 0;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
+  .hero-copy {
+    padding: 18px 28px 0;
+  }
+
+  .hero p {
+    margin-top: 22px;
+  }
+
+  .soft-strip {
+    width: min(920px, calc(100% - 56px));
+    margin: 20px auto 24px;
+    padding: 16px 22px;
+  }
+
+  .hero-visual {
+    padding: 24px 20px 34px;
+  }
+
   .carousel {
-    margin: 30px auto 36px;
-    padding: 28px 0;
+    margin: 28px auto 34px;
+    padding: 24px 0;
   }
 
   .card-track {
@@ -673,7 +691,7 @@ body.modal-open {
     flex: 0 0 calc((100vw - 92px) / 2.7);
     width: calc((100vw - 92px) / 2.7);
     height: 420px;
-    padding: 22px 18px;
+    padding: 20px 18px;
   }
 
   .info-card h3 {
@@ -688,6 +706,38 @@ body.modal-open {
 
   .info-card a {
     font-size: 14px;
+  }
+
+  .intro {
+    padding: 52px 24px 62px;
+  }
+
+  .feature-box {
+    gap: 28px 40px;
+    margin-top: 30px;
+    padding: 32px 32px 36px;
+  }
+
+  .cards-section {
+    padding: 48px 0 62px;
+  }
+
+  .slider-controls {
+    gap: 16px;
+  }
+
+  .promo {
+    gap: 28px;
+    margin-right: 18px;
+    padding: 32px 24px 32px 28px;
+  }
+
+  .promo p {
+    margin-top: 14px;
+  }
+
+  .promo-image {
+    padding: 14px;
   }
 
   .info-card:nth-child(odd) {
@@ -715,10 +765,10 @@ body.modal-open {
   }
 
   .promo {
-    width: calc(100% - 16px);
-    padding: 32px 16px 32px 20px;
+    width: calc(100% - 20px);
+    padding: 26px 16px 26px 18px;
     border-radius: 0 16px 16px 0;
-    gap: 28px;
+    gap: 22px;
   }
 }
 
@@ -745,8 +795,8 @@ body.modal-open {
     display: none;
     flex-direction: column;
     align-items: stretch;
-    gap: 14px;
-    padding: 18px;
+    gap: 12px;
+    padding: 16px;
     border: 1px solid rgba(12, 76, 124, 0.12);
     border-radius: 14px;
     background: #ffffff;
@@ -764,7 +814,7 @@ body.modal-open {
     max-width: none;
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
+    gap: 8px;
   }
 
   .nav-link,
@@ -815,12 +865,22 @@ body.modal-open {
   }
 
   .hero-copy {
-    padding-top: 10px;
+    padding: 8px 16px 0;
   }
 
   .hero p,
   .soft-strip {
     line-height: 1.45;
+  }
+
+  .hero p {
+    margin-top: 18px;
+  }
+
+  .soft-strip {
+    width: calc(100% - 32px);
+    margin: 18px auto 22px;
+    padding: 14px 16px;
   }
 
   .primary-button {
@@ -829,8 +889,12 @@ body.modal-open {
     font-size: 18px;
   }
 
+  .hero-visual .primary-button {
+    transform: translateY(-28%);
+  }
+
   .hero-visual {
-    padding: 0 16px 38px;
+    padding: 0 12px 30px;
   }
 
   .hero-visual::before {
@@ -850,8 +914,14 @@ body.modal-open {
     margin: 0 auto -15px;
   }
 
+  .intro {
+    padding: 38px 16px 48px;
+  }
+
   .feature-box {
-    padding: 28px 22px;
+    gap: 18px;
+    margin-top: 24px;
+    padding: 22px 18px 26px;
   }
 
   .feature-box li {
@@ -861,7 +931,7 @@ body.modal-open {
   .card-track {
     width: max-content;
     margin-right: 0;
-    padding: 0 20px 12px;
+    padding: 0 16px 10px;
   }
 
   .info-card {
@@ -877,8 +947,8 @@ body.modal-open {
     padding: 28px 20px;
   }
   .carousel {
-    padding: 20px 0;
-    margin: 24px auto;
+    padding: 16px 0;
+    margin: 20px auto 22px;
   }
   .info-card {
     flex: 0 0 calc((100vw - 56px) / 1.4);
@@ -891,6 +961,10 @@ body.modal-open {
   }
   .info-card p {
     font-size: 10.5px;
+  }
+
+  .slider-controls {
+    gap: 14px;
   }
 
   .info-card:nth-child(odd) {
